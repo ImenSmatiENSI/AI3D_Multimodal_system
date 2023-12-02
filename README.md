@@ -5,7 +5,7 @@ Traditional deep-learning verification tools often deal with image-type data. Su
 
 
 This figure illustrates the concept of the system, depicting various perturbations within the projective transformation, such as 3D translation or 3D rotation. 
-![figure]([[https://github.com/ImenSmatiENSI/AI3DC/main/3Dimage.png]]) 
+![figure][([[https://github.com/ImenSmatiENSI/AI3DC/main/3Dimage.png]]) ](https://github.com/ImenSmatiENSI/AI3DC/blob/main/3Dimage.PNG)
 
 The AI3DC framework is implemented in python programming language and supports any architecture as fully connected, convolutional, and max pooling layers for contours' classification. 
 Based on the DeepPoly analyzer, a domain that combines Polyhedrons with Intervals. It is implemented using two main libraries: ERAN \footnote{Available on Github in the following link \url{https://github.com/eth-sri/eran}} and ELINA library \footnote{Available on Github at the following link \url{https://github.com/eth-sri/ELINA}}, coded in respectively Python and C programming languages.
