@@ -8,4 +8,6 @@ Traditional deep-learning verification tools often deal with image-type data. Su
 
 
 The AI3DC framework is implemented in python programming language and supports any architecture as fully connected, convolutional, and max pooling layers for contours' classification. 
-Based on the DeepPoly analyzer, a domain that combines Polyhedrons with Intervals. It is implemented using two main libraries: ERAN \footnote{Available on Github in the following link \url{https://github.com/eth-sri/eran}} and ELINA library \footnote{Available on Github at the following link \url{https://github.com/eth-sri/ELINA}}, coded in respectively Python and C programming languages.
+Based on the DeepPoly analyzer, a domain that combines Polyhedrons with Intervals. It is implemented using two main libraries: ERAN [ERAN](https://github.com/eth-sri/eran) and ELINA library \footnote{Available on Github at the following link \url{https://github.com/eth-sri/ELINA}}, coded in respectively Python and C programming languages.
+
+If your aim is to implement neural network verification in your application, it's advisable to employ the latest ERAN verifier, which boasts enhanced verification algorithms rooted in abstract interpretation. To incorporate this verifier and enable contour support for any object tested with deepPoly, consult the adapted main framework. When selecting the abstract domain, consider its suitability for representing the specific attacks tested in this project
