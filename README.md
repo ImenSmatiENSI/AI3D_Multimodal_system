@@ -12,4 +12,4 @@ Based on the DeepPoly analyzer, a domain that combines Polyhedrons with Interval
 
 If your aim is to implement neural network verification in your application, it's advisable to employ the latest [ERAN](https://github.com/eth-sri/eran) verifier, which boasts enhanced verification algorithms rooted in abstract interpretation. To incorporate this verifier and enable contour support for any object tested with deepPoly, consult the adapted main framework. When selecting the abstract domain, consider its suitability for representing the specific attacks tested in this research.
 
-All steps for embedding contours and preprocessing image data, including contour extraction, are detailed in the "Multimodal Extraction" repository on my GitHub. You can find the repository [here]([lien du répertoire GitHub](https://github.com/ImenSmatiENSI/Multimodal-System))
+All steps for embedding contours and preprocessing image data, including contour extraction, are detailed in the "Multimodal Extraction" repository on my GitHub. You can find the repository [here](https://github.com/ImenSmatiENSI/Multimodal-System))
