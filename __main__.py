@@ -54,8 +54,9 @@ from pprint import pprint
 from refine_gpupoly import *
 from utils import parse_vnn_lib_prop, translate_output_constraints, translate_input_to_box, negate_cstr_or_list_old
 
-from Rot3D_contours import *
 from Deplacement3D import *
+from Rot3D_contours import *
+
 
 
 
