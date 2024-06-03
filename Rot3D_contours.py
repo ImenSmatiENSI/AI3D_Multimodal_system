@@ -153,5 +153,5 @@ def rotate3D_contour_bs(cont, phi_range_min, phi_range_max, ksi1_range_min, ksi1
     '''
 
 
-    return Lower_bound_final
+    return Lower_bound_final,Upper_bound_final
 
