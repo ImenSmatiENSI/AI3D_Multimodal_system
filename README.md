@@ -2,7 +2,7 @@
 AI3D: Contour Abstraction for Deep Neural Network's Certification against 3D Displacement
 
 Traditional deep-learning verification tools often deal with image-type data. Such systems certify the robustness of the image classifier against attacks including simple contrast, FGSM noise, and $L_{\infty}$. Very few studies deal with geometric certification which is still a remaining challenge. On contour-type data, the robustness of a given NN-based classifier is a critical issue. To assess it. In this work, we propose a general framework of Lower and Upper Bounds that enables us to verify the robustness of a DNN against a broader range of projective attacks represented by 3D displacement..
-We implement it as a system which is the first that certifies deep contour classifiers. Additionally, we integrated this into a multimodal system that verifies images based on both pixel representations and contours. We propose to name this system AI3D. We tested it on two different image datasets, extracting their contours using an affine arclength reparametrization approach to represent contours with (X, Y) coordinates .
+We implement it as a system which is the first that certifies deep contour classifiers. Additionally, we integrated this into a multimodal system that verifies images based on both pixel representations and contours. We propose to name this system AI3D. We tested it on two different image datasets, extracting their contours using an affine arclength reparametrization approach to represent contours with (X, Y) coordinates: [Contour extraction](https://github.com/ImenSmatiENSI/Multimodal_extraction).
 
 
 
