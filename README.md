@@ -13,19 +13,6 @@ Based on the DeepPoly analyzer, a domain that combines Polyhedrons with Interval
 ![This figure](SL2_butterfly.png)  This figure illustrates the concept of the system, depicting various perturbations within the projective transformation, such as 3D translation or 3D rotation. 
 
 
-## 📖 Project Structure  
-Here’s a breakdown of the project’s directory structure:
-AI3D_Multimodal_system/
-│── certifier/  # Modified DeepPoly integration within ERAN
-│── experiments/  # Benchmark evaluations (MNIST, MPEG7, Swedish Leaf)
-│── Application_SwedishLeaf/  # Preprocessing and dataset adaptation
-│   ├── raw_data/  # Original Swedish Leaf dataset
-│   ├── processed_data/  # Preprocessed contours and images
-│   ├── preprocess_swedish_leaf.py  # Script for contour extraction and preprocessing
-│   ├── README.md  # Instructions for usage
-│── images/  # Visualization of projective transformations
-│── results/  # Evaluation metrics and certification results
-│── README.md  # Project documentation
 
 # Reproducing the Results
 
