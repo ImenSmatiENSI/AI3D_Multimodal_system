@@ -14,7 +14,6 @@
   limitations under the License.
 """
 
-
 import sys
 import os
 cpu_affinity = os.sched_getaffinity(0)
@@ -452,7 +451,7 @@ elif not config.geometric:
 dataset = config.dataset
 
 if zonotope_bool==False:
-   assert dataset in ['mnist', 'cifar10', 'acasxu', 'fashion','mpeg7','mnistcont','image_segmt'], "only mnist, cifar10, acasxu, and fashion datasets are supported"
+   assert dataset in ['mnist', 'cifar10', 'acasxu', 'fashion','mpeg7','mnistcont','leafcontours','img_leaf','image_segmt'], "only mnist, cifar10, acasxu, and fashion datasets are supported"
 
 mean = 0
 std = 0
@@ -512,6 +511,10 @@ else:
         num_pixels = len(zonotope)
     elif(dataset=='mnist'):
         num_pixels = 784
+    elif(dataset=='mpeg7img'):
+        num_pixels = 784
+    elif(dataset=='img_leaf'):
+        num_pixels = 784  
     elif (dataset=='cifar10'):
         num_pixels = 3072
     elif (dataset=='image_segmt'):
@@ -522,6 +525,8 @@ else:
         num_pixels = 240
     elif(dataset=='mnistcont'): 
         num_pixels = 240 
+    elif(dataset=='leafcontours'): 
+        num_pixels = 240   
     if is_onnx:
         model, is_conv = read_onnx_net(netname)
         print("''''''''''''''''''''''''''''pytorch model test ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
@@ -1649,10 +1654,10 @@ else:
 
 
 print('hello')
-with open('result_3dDep_model1_150x3_mnist_100.csv', mode='a') as csv_file_res:
+with open('result_3trs_leaf_contours_conv2Dmax.csv', mode='a') as csv_file_res:
     fieldnames = ['epsilon','correctly_classified_images','verified_images','temps','interval1','interval2']
     writer = csv.DictWriter(csv_file_res, fieldnames=fieldnames)
-    writer.writerow({ 'epsilon': epsilon,'correctly_classified_images': correctly_classified_images,'verified_images': verified_images,'temps':cum_time,'interval1':0,'interval2':250})
+    writer.writerow({ 'epsilon': epsilon,'correctly_classified_images': correctly_classified_images,'verified_images': verified_images,'temps':cum_time,'interval1':0,'interval2':100})
 print('bye')
 
 
