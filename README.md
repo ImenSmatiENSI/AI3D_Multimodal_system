@@ -27,8 +27,7 @@ AI3D_Multimodal_system/
 │── results/  # Evaluation metrics and certification results
 │── README.md  # Project documentation
 
-
-## Reproducing the Results
+# Reproducing the Results
 
 If your aim is to implement neural network verification in your application, it's advisable to employ the latest [ERAN](https://github.com/eth-sri/eran) verifier, which boasts enhanced verification algorithms rooted in abstract interpretation. To incorporate this verifier and enable contour support for any object tested with deepPoly, consult the adapted main framework. When selecting the abstract domain, consider its suitability for representing the specific attacks tested in this research.
 
@@ -36,23 +35,23 @@ If your aim is to implement neural network verification in your application, it'
 If your aim is to implement neural network verification in your application, it's advisable to employ the latest [ERAN](https://github.com/eth-sri/eran) verifier, which boasts enhanced verification algorithms rooted in abstract interpretation. To incorporate this verifier and enable contour support for any object tested with deepPoly, consult the adapted main framework. When selecting the abstract domain, consider its suitability for representing the specific attacks tested in this research.
 To use the AI3D_Multimodal_System, you first need to set up ERAN (as it integrates the DeepPoly verifier). Follow these steps to install ERAN, then proceed to install the rest of the dependencies for AI3D_Multimodal_System.
 
-## Clone the ERAN Repository
+### Clone the ERAN Repository
 
 First, clone the official ERAN repository to your local machine:
 ```bash
 git clone https://github.com/eth-sri/eran.git
 cd eran
 ```
-## Set Up ERAN
+### Set Up ERAN
 Follow the setup instructions in the ERAN GitHub repository to configure ERAN. This setup will enable the framework for robustness verification.
 
-## Clone the AI3D_Multimodal_System Repository 
+### Clone the AI3D_Multimodal_System Repository 
 After setting up ERAN, we have updated the main framework initially provided by ERAN to support multimodal data (images and contours). ERAN itself only supports some basic image examples, but our system allows for testing on more complex datasets, including both images and contours. This extension is necessary to make DeepPoly work effectively on multimodal data.
    ```bash
    git clone https://github.com/ImenSmatiENSI/AI3D_Multimodal_System.git
    cd AI3D_Multimodal_System
 ```
-## Install dependencies:
+### Install dependencies:
    ```bash
    pip install -r requirements.txt
 ```
@@ -76,3 +75,9 @@ run:
 https://colab.research.google.com/github/ImenSmatiENSI/AI3D_Multimodal_system/Application_SwedishLeaf/preprocess_swedish_leaf.ipynb
 ```
 
+## Reproducing the Results
+After completing all the installation steps and adapting the code (including modifications to the main framework and contour extraction), you can proceed to verify the system. To run the verification, simply execute the following command, ensuring that you specify the path to the contours dataset:
+ 
+ ```bash
+~/ERAN/tf_verify$ python3 . --netname models_Leaf/leaf_contour_model3NN.pb --domain deeppoly --dataset leafcontours
+```
