@@ -48,11 +48,13 @@ All steps for embedding contours and preprocessing image data, including contour
 This project extends the experiments to include multimodal datasets such as the Swedish Leaf dataset.
 
 ### Application:Swedish Leaf Dataset & Preprocessing
-We applied our approach to a real-world dataset: Swedish Leaf, demonstrating its applicability to practical scenarios.
+We applied our approach to a real-world dataset: ![Swedish Leaf](SwedishLeaf_Application/Leafswedishdataset.png) , demonstrating its applicability to practical scenarios.
 We introduced a dedicated folder ([Application_SwedishLeaf](https://github.com/ImenSmatiENSI/AI3D_Multimodal_system/tree/main/SwedishLeaf_Application)) containing:
+
 📌 Dataset Preprocessing: Scripts to extract contours and preprocess images for certification.
 📌 Contour Extraction: Converts images into edge-based representations for multimodal analysis.
-📌 Projective Transformation Study: The dataset is adapted to include projective distortions, and a corresponding image is provided to illustrate these transformations.
+📌 Projective Transformation Study: The dataset is adapted to include projective distortions, and a corresponding image is provided to illustrate these 
+transformations.
 
 To preprocess the Swedish Leaf dataset and extract contours Open the Preprocessing Notebook
 In Google Colab, open the notebook preprocess_swedish_leaf.ipynb. 
